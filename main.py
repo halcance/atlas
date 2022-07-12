@@ -3,6 +3,7 @@ from cgitb import text
 from tkinter import *
 # Criar Janela
 janela = Tk()
+janela.title('ATLAS')
 # Criar Textos
 texto_orientacao = Label(janela, text="ATLAS")
 texto_orientacao.grid(column=0, row=0)

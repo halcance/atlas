@@ -1,0 +1,6 @@
+.venv
+\Include
+\Lib\
+\Scripts
+pyvenv.cfg
+

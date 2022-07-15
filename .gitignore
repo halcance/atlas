@@ -1,6 +1,7 @@
-.venv
-\Include
-\Lib\
-\Scripts
+*.venv
+*\Include
+*\Lib\
+*\Scripts\
+*/Scripts
+/Lib
 pyvenv.cfg
-

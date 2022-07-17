@@ -10,3 +10,6 @@ I need an local server to help me stay up-to-date and giving away of spreadsheet
   - An blog type to describe what happen that day. Journaling.
   - Staff people about
   
+# Banco de Dados
+
+import sqllite3

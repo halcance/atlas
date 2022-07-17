@@ -6,10 +6,10 @@ from tkinter import ttk
 from tkinter.messagebox import showinfo, showwarning
 
 def login_clicked():
-    if(user.get()=='magno'):
-        showinfo(title='info', message='Hi MASTER')
+    if(user.get()=='magno' and password.get() =='master'):
+        showinfo(title='info', message='BEM VINDO SENHOR CRIADOR DESTE PROGRAMA MARAVILHOSO')
     else:
-        showwarning(title='ERRO', message='What')
+        showwarning(title='ERRO', message='Usuário e Senha incorreto.')
 # Criar Janela
 janela = tk.Tk()
 janela.title('ATLAS')

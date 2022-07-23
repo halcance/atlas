@@ -1,4 +1,4 @@
-# Atlas
+# Atlas [![Python application](https://github.com/halcance/atlas/actions/workflows/python-app.yml/badge.svg?branch=beta)](https://github.com/halcance/atlas/actions/workflows/python-app.yml)
 
 ## Control of known
 

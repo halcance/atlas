@@ -6,3 +6,4 @@ atlas.code-workspace
 pyvenv.cfg
 atlas.db
 setup.pyvenv
+atlas.sqlite

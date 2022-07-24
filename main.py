@@ -35,16 +35,19 @@ def login_clicked():
 def user_logado():
     janela.withdraw()
     janela2 = tk.Toplevel()
-    janela2.title('PÁGINA PRINCIPAL')
-    janela_label = tk.Label(janela2, text="PÁGINA PRINCIPAL")
-    janela_label.grid(row=0,column=0,padx=10,pady=10,columnspan=4)
+    janela2.title('ATLAS - Interface')
+    janela2.geometry('500x300')
+    janela_label = tk.Label(janela2, text="ATLAS - Página Principal")
+    janela_label.grid(row=0,column=0,padx=10,pady=30,columnspan=4)
+    relatorio_label = tk.Label(janela2, text="Relatório")
+    relatorio_label.grid(row=1,column=1,padx=5,pady=5)
 
 def cadastrar_usuario():
     global janelacn_entry
     global janelacu_entry
     global janelacp_entry
     global janelace_entry
-
+    global janelac
     janelac = tk.Toplevel()
     janelac.title("CADASTRAR USUÁRIO")
 
@@ -80,7 +83,6 @@ def cadastrar_usuario():
     botao_cadastrar.grid(row=6,column=1,padx=20,pady=20)
 
 def cad_usuario():
-
     conexao = sqlite3.connect('atlas.sqlite')
     c = conexao.cursor()
     c.execute(" INSERT INTO users VALUES (null, :nome, :usuario, :senha, 0, :email) ",
@@ -97,6 +99,8 @@ def cad_usuario():
     janelacu_entry.delete(0,"end")
     janelacp_entry.delete(0,"end")
     janelace_entry.delete(0,"end")
+    janelac.destroy()
+    showinfo(title="Sucesso", message="Usuário Cadastrado")
 
 
 # Criar Janela

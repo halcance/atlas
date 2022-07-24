@@ -6,12 +6,7 @@ import sqlite3
 import tkinter as tk
 from tkinter import ttk
 from tkinter.messagebox import showinfo, showwarning
-import sys
-import os
 
-if os.environ.get('DISPLAY','') == '':
-    print('no display found. Using :0.0')
-    os.environ.__setitem__('DISPLAY', ':0.0')
 
 def login_clicked():
     usuario = user.get()

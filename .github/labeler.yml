@@ -7,15 +7,6 @@ core:
   - platforms/**/*
   - Makefile
   - '*.mk'
-dependencies:
-  - any:
-    - 'lib/**/*'
-    - '!lib/python/**/*'
-keyboard:
-  - any:
-    - 'keyboards/**/*'
-    - '!keyboards/**/keymaps/**/*'
-keymap:
-  - users/**/*
-  - layouts/**/*
-  - keyboards/**/keymaps/**/*
+# Add/remove 'critical' label if issue contains the words 'urgent' or 'critical'
+critical:
+    - '(critical|urgent)'

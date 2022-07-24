@@ -1,0 +1,2 @@
+- name: Review Badger
+  uses: SparkPost/review-badger@v1.0.3

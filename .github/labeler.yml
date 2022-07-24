@@ -1,12 +1,4 @@
-core:
-  - quantum/**/*
-  - tmk_core/**/*
-  - drivers/**/*
-  - tests/**/*
-  - util/**/*
-  - platforms/**/*
-  - Makefile
-  - '*.mk'
-# Add/remove 'critical' label if issue contains the words 'urgent' or 'critical'
 critical:
     - '(critical|urgent)'
+bug:
+  - '(bug|error)'

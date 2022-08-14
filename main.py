@@ -28,6 +28,7 @@ def login_clicked():
         showwarning(title='ERRO', message='Usuário e Senha incorreto.')
 
 def user_logado():
+    
     janela.withdraw()
     janela2 = tk.Toplevel()
     janela2.title('ATLAS - Interface')
@@ -35,6 +36,8 @@ def user_logado():
     janela_label = tk.Label(janela2, text="ATLAS - Página Principal")
     janela_label.grid(row=0,column=0,padx=10,pady=30,columnspan=4)
     relatorio_label = tk.Label(janela2, text="Relatório")
+    relatorio_label.grid(row=1,column=1,padx=5,pady=5)
+    relatorio_label = tk.Label(janela2, text="Adicione eventos recentes relatando o que ocorreu")
     relatorio_label.grid(row=1,column=1,padx=5,pady=5)
 
 def cadastrar_usuario():
@@ -137,10 +140,12 @@ password_label.grid(row=4,column=3,padx=10,pady=10)
 password_entry = ttk.Entry(janela, textvariable=password)
 password_entry.grid(row=5,column=3,padx=10,pady=10)
 
-texto1 = ttk.Label(janela, text="-Relatórios")
-texto1.grid(row=3,column=0,padx=10,pady=10, ipadx=80)
+texto1 = ttk.Label(janela, text="-Gerenciamento Planilhas")
+texto1.grid(row=3,column=0,padx=5,pady=5, ipadx=30)
 texto2 = ttk.Label(janela, text="-Relatórios")
-texto2.grid(row=4,column=0,padx=10,pady=10,ipadx=80)
+texto2.grid(row=4,column=0,padx=5,pady=10,ipadx=30)
+texto3 = ttk.Label(janela, text="-Gerenciamento de Colaboradores")
+texto3.grid(row=5,column=0,padx=5,pady=5,ipadx=30)
 
 # Manter janela aberta
 janela.mainloop()

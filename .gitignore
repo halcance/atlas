@@ -7,3 +7,6 @@ pyvenv.cfg
 atlas.db
 setup.pyvenv
 atlas.sqlite
+atlas.sqlite
+setup.py
+tests.py

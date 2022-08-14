@@ -1,4 +1,0 @@
-critical:
-    - '(critical|urgent)'
-bug:
-  - '(bug|error)'
